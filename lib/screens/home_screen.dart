@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:training_app/colors.dart' as color;
 
+import 'components/effort_container.dart';
 import 'components/program_bar.dart';
 import 'components/title_bar.dart';
 import 'components/workout_panel.dart';
@@ -33,7 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 20,
             ),
             // Workout panel
-            WorkoutPanel()
+            WorkoutPanel(),
+            SizedBox(
+              height: 5,
+            ),
+            EffortContainer()
           ],
         ),
       ),
