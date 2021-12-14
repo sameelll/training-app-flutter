@@ -49,6 +49,34 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 30,
             ),
+            // 'Your program' bar
+            Row(
+              children: [
+                Text(
+                  'Your Program',
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: color.AppColor.homePageSubtitle,
+                      fontWeight: FontWeight.w700),
+                ),
+                Expanded(
+                  child: Container(),
+                ),
+                Text(
+                  'Details',
+                  style: TextStyle(
+                      fontSize: 20, color: color.AppColor.homePageDetail),
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                  size: 20,
+                  color: color.AppColor.homePageIcons,
+                )
+              ],
+            )
           ],
         ),
       ),
