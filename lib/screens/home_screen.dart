@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:training_app/colors.dart' as color;
 
 import 'components/effort_container.dart';
+import 'components/focus_area_title.dart';
 import 'components/program_bar.dart';
 import 'components/title_bar.dart';
 import 'components/workout_panel.dart';
@@ -24,21 +25,24 @@ class _HomeScreenState extends State<HomeScreen> {
           children: const [
             // Title bar
             TitleBar(),
-            // Space between title bar
+            // Space Between Title Bar
             SizedBox(
               height: 30,
             ),
-            // 'Your program' bar
+            // 'Your program' Bar
             ProgramBar(),
             SizedBox(
               height: 20,
             ),
-            // Workout panel
+            // Workout Panel
             WorkoutPanel(),
             SizedBox(
               height: 5,
             ),
-            EffortContainer()
+            // Efoort Container
+            EffortContainer(),
+            // Focus Area Title
+            FocusAreaTitle()
           ],
         ),
       ),
