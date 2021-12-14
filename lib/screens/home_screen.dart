@@ -1,7 +1,10 @@
+// Packages
 import 'package:flutter/material.dart';
 import 'package:training_app/colors.dart' as color;
 
+// Components
 import 'components/effort_container.dart';
+import 'components/focus_area.dart';
 import 'components/focus_area_title.dart';
 import 'components/program_bar.dart';
 import 'components/title_bar.dart';
@@ -41,8 +44,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             // Efoort Container
             EffortContainer(),
-            // Focus Area Title
-            FocusAreaTitle()
+            // Focus Area
+            FocusAreaTitle(),
+            FocusArea(),
           ],
         ),
       ),

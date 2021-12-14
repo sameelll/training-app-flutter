@@ -12,7 +12,6 @@ class FocusAreaTitle extends StatelessWidget {
       children: [
         Text(
           'Area of focus',
-          textAlign: TextAlign.center,
           style: TextStyle(
               fontSize: 25,
               fontWeight: FontWeight.w500,
