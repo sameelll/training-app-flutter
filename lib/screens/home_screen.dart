@@ -99,6 +99,83 @@ class _HomeScreenState extends State<HomeScreen> {
                         blurRadius: 20,
                         color: color.AppColor.gradientSecond.withOpacity(0.2))
                   ]),
+              child: Container(
+                padding: const EdgeInsets.only(left: 20, top: 25, right: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Next Workout',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: color.AppColor.homePageContainerTextSmall),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'Legs Toning',
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: color.AppColor.homePageContainerTextSmall),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'and Glutes Workout',
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: color.AppColor.homePageContainerTextSmall),
+                    ),
+                    const SizedBox(
+                      height: 25,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.timer,
+                              size: 20,
+                              color: color.AppColor.homePageContainerTextSmall,
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            Text(
+                              '60 min',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  color: color
+                                      .AppColor.homePageContainerTextSmall),
+                            ),
+                          ],
+                        ),
+                        Expanded(
+                          child: Container(),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(60),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: color.AppColor.gradientFirst,
+                                    blurRadius: 10,
+                                    offset: const Offset(4, 8))
+                              ]),
+                          child: const Icon(
+                            Icons.play_circle_fill,
+                            color: Colors.white,
+                            size: 60,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
