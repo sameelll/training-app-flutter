@@ -13,6 +13,45 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: color.AppColor.homePageBackground,
+      body: Container(
+        padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
+        child: Column(
+          children: [
+            // Title bar
+            Row(
+              children: [
+                Text(
+                  'Training',
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: color.AppColor.homePageTitle,
+                      fontWeight: FontWeight.w700),
+                ),
+                // Adding flex
+                Expanded(
+                  child: Container(),
+                ),
+                Icon(Icons.arrow_back_ios,
+                    size: 20, color: color.AppColor.homePageIcons),
+                const SizedBox(
+                  width: 10,
+                ),
+                Icon(Icons.calendar_today_outlined,
+                    size: 20, color: color.AppColor.homePageIcons),
+                const SizedBox(
+                  width: 15,
+                ),
+                Icon(Icons.arrow_forward_ios,
+                    size: 20, color: color.AppColor.homePageIcons)
+              ],
+            ),
+            // Space between title bar
+            const SizedBox(
+              height: 30,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
