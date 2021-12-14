@@ -76,6 +76,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: color.AppColor.homePageIcons,
                 )
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 220,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    color.AppColor.gradientFirst.withOpacity(0.8),
+                    color.AppColor.gradientSecond.withOpacity(0.9)
+                  ], begin: Alignment.bottomLeft, end: Alignment.centerRight),
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10),
+                      topRight: Radius.circular(80)),
+                  boxShadow: [
+                    BoxShadow(
+                        offset: const Offset(5, 10),
+                        blurRadius: 20,
+                        color: color.AppColor.gradientSecond.withOpacity(0.2))
+                  ]),
             )
           ],
         ),
