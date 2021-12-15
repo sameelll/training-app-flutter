@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:training_app/colors.dart' as color;
+import 'package:training_app/video_info.dart';
 
 class ProgramBar extends StatelessWidget {
   const ProgramBar({
@@ -27,10 +29,15 @@ class ProgramBar extends StatelessWidget {
         const SizedBox(
           width: 5,
         ),
-        Icon(
-          Icons.arrow_forward,
-          size: 20,
-          color: color.AppColor.homePageIcons,
+        InkWell(
+          onTap: () {
+            Get.to(() => const VideoInfo());
+          },
+          child: Icon(
+            Icons.arrow_forward,
+            size: 20,
+            color: color.AppColor.homePageIcons,
+          ),
         )
       ],
     );
